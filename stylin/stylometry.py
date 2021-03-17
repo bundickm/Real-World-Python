@@ -67,7 +67,6 @@ def word_length_test(words_by_author, len_shortest_corpus):
                                                 title='Word Length')
 
     plt.legend()
-    # plt.show()
 
 
 def stopwords_test(words_by_author, len_shortest_corpus):
@@ -75,8 +74,6 @@ def stopwords_test(words_by_author, len_shortest_corpus):
     stopwords_by_author_freq_dist = dict()
     plt.figure(2)
     stop_words = set(stopwords.words('english'))
-    # print('Number of stopwords = {}\n'.format(len(stop_words)))
-    # print('Stopwords = {}\n'.format(stop_words))
 
     for i, author in enumerate(words_by_author):
         stopwords_by_author = [word for word in words_by_author[author]
@@ -87,7 +84,6 @@ def stopwords_test(words_by_author, len_shortest_corpus):
                                                     title='50 Most Common Stopwords')
 
     plt.legend()
-    # plt.show()
 
 
 def parts_of_speech_test(words_by_author, len_shortest_corpus):
